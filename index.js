@@ -49,7 +49,7 @@ window.onload = function () {
       segundos.innerHTML = s;
     }
 
-    if (s > 15) {
+    if (s > 60) {
       m++;
       minutos.innerHTML = '0' + m;
       s = 0;
