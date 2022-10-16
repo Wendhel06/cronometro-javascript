@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro</title>
+</head>
+
+<body>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    h1 {
+      font-size: 5rem;
+      line-height: 1;
+      margin: 0px;
+    }
+
+    .wrapper {
+      background: orange;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .wrapper-2 {
+      display: flex;
+    }
+
+    .wrapper-2 button {
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      background: transparent;
+      border: white 1px solid;
+      margin-right: 10px;
+    }
+
+    section p {
+      font-size: 40px;
+      line-height: 1;
+    }
+
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <div class="wrapper">
+    <h1>Cronômetro</h1>
+    <h2>Cronômetro Javascript</h2>
+    <p><span id="minutos">00</span>:<span id="segundos">00</span>:<span id="dezenas">00</span></p>
+    <div class="wrapper-2">
+      <button id="button-start">Start</button>
+      <button id="button-stop">Stop</button>
+      <button id="button-reset">Reset</button>
+    </div>
+  </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
